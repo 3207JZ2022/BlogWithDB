@@ -24,7 +24,6 @@ const Post = mongoose.model('post', postSchema);
 
 app.get('/', (req, res) => {
     if(page=="home"){
-        console.log('reach home')
         Post.find({})
         .then(function(foundPosts){
             posts.length=0;
@@ -38,8 +37,7 @@ app.get('/', (req, res) => {
              console.log(err);
              res.render('page', {currentPage: page, content: content, posts:foundPosts, display: display});
         });
-    }else{
-        console.log("not home");    
+    }else{ 
         res.render('page', {currentPage: page, content: content, posts:[], display: display});
     }
 
@@ -67,7 +65,6 @@ app.post('/publish', function(req, res) {
         res.redirect('/');
         })
     .catch(err=> console.log(err));    
-    // posts.push(title, newContent);
 
 })
 
@@ -102,17 +99,13 @@ app.get('/posts',function(req, res){
 })
 
 app.get("/posts/:postID",function(req, res){
-    console.log("trigger")
     var postID=req.params.postID;
-    console.log(postID);
     let count=0;
     display.length=0;
     Post.find({_id:postID})
     .then(function(foundPosts){
-        console.log(foundPosts);
         display.push(foundPosts[0].title);
         display.push(foundPosts[0].content);  
-        console.log(display);
     })
     .catch(err =>console.log(err));
     page="posts";
@@ -123,6 +116,5 @@ app.get("/posts/:postID",function(req, res){
 
 
 app.listen(3000,function(req, res) {
-
     console.log("listening on port 3000");
 })
