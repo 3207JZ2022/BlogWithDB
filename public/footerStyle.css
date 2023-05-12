@@ -1,0 +1,23 @@
+
+.footer{
+    position: absolute;
+    height: 3.5rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFA559;
+    bottom: 0px;
+    color:#FFE3CF;
+}
+
+
+@media only screen and (max-width: 810px) {
+
+    .footer{
+    background-color: rgb(86, 175, 146);
+    height: 2rem;
+
+    }
+
+}

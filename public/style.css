@@ -1,0 +1,114 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    position:relative;
+    min-height: 100vh;
+}
+
+.main-body{
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding-bottom: 4rem;
+
+}
+
+.content-title{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding-top: 20px;
+    text-shadow: 1px 1px 50px gray;
+}
+
+.paragraph{
+    padding-top: 10px;
+
+}
+
+.para{
+    border-top: 1px solid rgba(13,13,13,0.3);
+
+    margin-bottom: 1.5rem;
+
+}
+
+.post-title-items{
+    font-family: 'Merriweather', serif;
+    font-size: 1.5rem ;
+    font-style: normal;
+    padding-top: 0.5rem;
+}
+
+.post-items{
+    font-family: 'Roboto', sans-serif;
+    font-size:1rem;
+    padding-top: 0.5rem;
+
+    word-wrap: break-word;
+}
+
+
+.post{
+    padding-top: 25px;
+    margin-bottom: 0.5rem;
+
+}
+
+.more-tag{
+    margin-left: 1rem;
+}
+
+.compose-link{
+    position: fixed;
+    display: inline-flex;
+    right: 5%;
+    bottom: 13%;
+    border-radius: 50%;
+    background-color: rgba(248, 216, 128, 0.69);
+    height: 4rem;
+    width: 4rem;
+    font-size: 4rem;
+    justify-content: center;
+    align-items: center;
+    transition-duration: 0.2s;
+}
+
+.compose-link a{
+    text-decoration: none;
+    font-style: bold;
+}
+
+.compose-link:hover{
+    font-size: 4.5rem;
+    height: 4.5rem;
+    width: 4.5rem;
+    box-shadow: 0px 0px 9px 5px #FFA559;
+}
+
+.footer{
+    position: static;
+    bottom: 0;
+}
+
+@media only screen and (max-width: 810px) {
+    .main-body{
+        padding-bottom: 2.5rem;
+    }
+
+    .compose-link{
+
+        height: 3rem;
+        width: 3rem;
+        font-size: 3rem;
+        bottom: 20%;
+        background-color:skyblue;
+
+    }
+
+    .compose-link:hover{
+        box-shadow: 0px 0px 3px 1px rgb(0, 221, 255);
+
+    }
+}

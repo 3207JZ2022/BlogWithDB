@@ -1,0 +1,82 @@
+.header{
+  font-family:'Courier New', Courier, monospace;
+  background-color: #F4EEE0;
+  height: 75px;
+}
+
+.nav-bar{
+  display: inline-flex;
+  width: 95%;
+  height:100%;
+}
+
+.webTitle{
+  width: 60%;
+  font-size:35px;
+  margin: auto;
+  margin-left: 10%;
+  text-decoration: none;
+  color: #333;
+
+}
+.redirectMenu{
+  display: none;
+}
+
+.redirectMenu div {
+  width: 35px;
+  height: 5px;
+  background-color: black;
+  margin: 6px 0;
+}
+
+.pageRedirect {
+  display: inline-flex;
+  align-items: center;
+  list-style: none;
+  text-align: center;
+
+}
+
+.pageRedirect li{
+  display: inline-flex;
+  width: 120px;
+  padding-right: 20px;;
+}
+
+
+.pageRedirect li a{  
+  text-decoration: none;
+  color:#4F4557;
+  height: 100%;
+  width: 100%;
+  font-size: 1.2em;
+  transition-duration: 0.2s;
+}
+
+.pageRedirect li a:hover{
+  font-size: x-large;
+  color: #393646;
+  border-bottom: #393646 solid 2px;
+  width: 100%;
+
+}
+
+
+
+@media only screen and (max-width: 810px) {
+  .header {
+    background-color: lightblue;
+  }
+  .webTitle{
+    display: none;
+  }
+  .pageRedirect{
+    justify-content: center;
+    width: 100%;
+  }
+  
+  .pageRedirect li{
+    font-size: 1.1rem;
+  }
+}
